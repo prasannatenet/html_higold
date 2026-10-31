@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#252620">
+
+    <title>Higold Hardware | Product Enquiry</title>
+    <meta name="description" content="Tell us about yourself and explore premium Higold kitchen hardware, wardrobe accessories, furniture fittings and outdoor furniture.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page-wrapper">
+        <section class="enquiry-card" aria-labelledby="form-title">
+
+            <!-- Header -->
+            <header class="form-header">
+                <a class="brand" href="https://higoldhardware.in/"
+                   aria-label="Higold Hardware home">
+                    HIGOLD<span>.</span>
+                </a>
+
+                <p class="brand-caption">PREMIUM HARDWARE SOLUTIONS</p>
+
+                <div class="header-divider"></div>
+
+                <h1 id="form-title">
+                    Let's find the right solution for you
+                </h1>
+
+                <p class="header-description">
+                    Tell us a little about yourself and what you're looking for.
+                </p>
+            </header>
+
+            <!-- Progress -->
+            <div class="progress-section" aria-label="Form progress">
+                <div class="progress-step active" data-progress="1">
+                    <span class="step-number">1</span>
+                    <span class="step-label">Customer Type</span>
+                </div>
+
+                <div class="progress-line"></div>
+
+                <div class="progress-step" data-progress="2">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Your Details</span>
+                </div>
+
+                <div class="progress-line"></div>
+
+                <div class="progress-step" data-progress="3">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Product Interests</span>
+                </div>
+            </div>
+
+            <form id="enquiryForm" novalidate>
+
+                <!-- STEP 1 -->
+                <div class="form-step active" data-step="1">
+
+                    <div class="section-heading">
+                        <span class="eyebrow">STEP 01</span>
+                        <h2>How are you purchasing?</h2>
+                        <p>Choose the option that best describes you.</p>
+                    </div>
+
+                    <fieldset class="customer-options">
+                        <legend class="visually-hidden">
+                            Select your customer type
+                        </legend>
+
+                        <label class="customer-option selected">
+                            <input
+                                type="radio"
+                                name="customer_type"
+                                value="individual"
+                                checked
+                                required
+                            >
+
+                            <span class="option-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="8" r="4"
+                                        stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M4 21v-2a8 8 0 0 1 16 0v2"
+                                        stroke="currentColor" stroke-width="1.6"
+                                        stroke-linecap="round"/>
+                                </svg>
+                            </span>
+
+                            <span class="option-content">
+                                <strong>Individual</strong>
+                                <small>For personal use</small>
+                            </span>
+
+                            <span class="radio-indicator"></span>
+                        </label>
+
+                        <label class="customer-option">
+                            <input
+                                type="radio"
+                                name="customer_type"
+                                value="business"
+                                required
+                            >
+
+                            <span class="option-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="7" width="18" height="14"
+                                        rx="2" stroke="currentColor"
+                                        stroke-width="1.6"/>
+                                    <path d="M9 7V4h6v3M3 12h18M10 12v2h4v-2"
+                                        stroke="currentColor"
+                                        stroke-width="1.6"
+                                        stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+
+                            <span class="option-content">
+                                <strong>Business / Trade</strong>
+                                <small>For projects, business or resale</small>
+                            </span>
+
+                            <span class="radio-indicator"></span>
+                        </label>
+                    </fieldset>
+
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="form-step" data-step="2" hidden>
+
+                    <div class="section-heading">
+                        <span class="eyebrow">STEP 02</span>
+                        <h2>Your contact details</h2>
+                        <p>Share your details so our team can contact you.</p>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+                            <label for="fullName">Full Name <span>*</span></label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                maxlength="100"
+                                required
+                            >
+                            <small class="field-error"></small>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="mobile">Mobile Number <span>*</span></label>
+
+                            <div class="mobile-input">
+                                <span class="country-code">+91</span>
+                                <input
+                                    type="tel"
+                                    id="mobile"
+                                    name="mobile"
+                                    placeholder="10-digit mobile number"
+                                    inputmode="numeric"
+                                    autocomplete="tel-national"
+                                    maxlength="10"
+                                    pattern="[6-9][0-9]{9}"
+                                    required
+                                >
+                            </div>
+
+                            <small class="field-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">PIN Code <span>*</span></label>
+                            <input
+                                type="text"
+                                id="pincode"
+                                name="pincode"
+                                placeholder="6-digit PIN code"
+                                inputmode="numeric"
+                                autocomplete="postal-code"
+                                maxlength="6"
+                                pattern="[1-9][0-9]{5}"
+                                required
+                            >
+                            <small class="field-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City <span>*</span></label>
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter your city"
+                                autocomplete="address-level2"
+                                maxlength="100"
+                                required
+                            >
+                            <small class="field-error"></small>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="email">
+                                Email Address
+                                <span class="optional">(Optional)</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                maxlength="150"
+                            >
+                            <small class="field-error"></small>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="form-step" data-step="3" hidden>
+
+                    <div class="section-heading">
+                        <span class="eyebrow">STEP 03</span>
+                        <h2>Which product category are you interested in?</h2>
+                        <p>Select all categories that interest you.</p>
+                    </div>
+
+                    <fieldset class="category-grid">
+                        <legend class="visually-hidden">
+                            Select product categories
+                        </legend>
+
+                        <label class="category-card">
+                            <input
+                                type="checkbox"
+                                name="categories[]"
+                                value="Kitchen Hardware"
+                            >
+
+                            <span class="category-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 21V10h16v11M3 10h18M6 10V4h12v6M8 14h3M8 17h3M15 14h2v3h-2z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+
+                            <span class="category-content">
+                                <strong>Kitchen Hardware</strong>
+                                <small>Smart kitchen solutions</small>
+                            </span>
+
+                            <span class="check-indicator" aria-hidden="true">
+                                ✓
+                            </span>
+                        </label>
+
+                        <label class="category-card">
+                            <input
+                                type="checkbox"
+                                name="categories[]"
+                                value="Wardrobe Accessories"
+                            >
+
+                            <span class="category-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="4" y="2.5" width="16" height="19"
+                                        rx="1" stroke="currentColor"
+                                        stroke-width="1.5"/>
+                                    <path d="M12 3v18M9 11v2M15 11v2"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"/>
+                                </svg>
+                            </span>
+
+                            <span class="category-content">
+                                <strong>Wardrobe Accessories</strong>
+                                <small>Organisers and storage</small>
+                            </span>
+
+                            <span class="check-indicator" aria-hidden="true">
+                                ✓
+                            </span>
+                        </label>
+
+                        <label class="category-card">
+                            <input
+                                type="checkbox"
+                                name="categories[]"
+                                value="Furniture Fittings"
+                            >
+
+                            <span class="category-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 11V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5M4 12h16v5H4zM6 17v4M18 17v4M8 7h8"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+
+                            <span class="category-content">
+                                <strong>Furniture Fittings</strong>
+                                <small>Functional furniture hardware</small>
+                            </span>
+
+                            <span class="check-indicator" aria-hidden="true">
+                                ✓
+                            </span>
+                        </label>
+
+                        <label class="category-card">
+                            <input
+                                type="checkbox"
+                                name="categories[]"
+                                value="Outdoor Furniture"
+                            >
+
+                            <span class="category-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 11V7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M5 11h14v5H5zM7 16v5M17 16v5M3 11h18"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+
+                            <span class="category-content">
+                                <strong>Outdoor Furniture</strong>
+                                <small>Outdoor living and dining</small>
+                            </span>
+
+                            <span class="check-indicator" aria-hidden="true">
+                                ✓
+                            </span>
+                        </label>
+                    </fieldset>
+
+                    <p id="categoryCount" class="selection-count"
+                       aria-live="polite">
+                        0 categories selected
+                    </p>
+
+                    <p id="categoryError" class="general-error"
+                       role="alert" hidden>
+                        Please select at least one product category.
+                    </p>
+
+                    <p id="submitError" class="general-error" role="alert" hidden></p>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="form-footer" id="formFooter">
+                    <button type="button" id="backBtn"
+                        class="btn btn-secondary" hidden>
+                        <span aria-hidden="true">←</span> Back
+                    </button>
+
+                    <span class="footer-step" id="footerStep">
+                        Step 1 of 3
+                    </span>
+
+                    <button type="button" id="nextBtn" class="btn btn-primary">
+                        Continue <span aria-hidden="true">→</span>
+                    </button>
+
+                    <button type="submit" id="submitBtn"
+                        class="btn btn-primary" hidden>
+                        Submit Enquiry <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+                <!-- <p class="privacy-note">
+                    <span aria-hidden="true">🔒</span>
+                    Your information will be used to respond to your enquiry.
+                </p> -->
+
+            </form>
+
+            <!-- Success message -->
+            <section id="successMessage" class="success-message"
+                aria-live="polite" hidden>
+                <div class="success-icon" aria-hidden="true">✓</div>
+                <h2>Thank you for your interest!</h2>
+                <p class="success-copy">Your enquiry has been submitted successfully.</p>
+                <button type="button" id="restartBtn" class="btn btn-primary">
+                    Start Again
+                </button>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
